@@ -2,9 +2,9 @@ function createCard({ title, image, readyInMinutes, id }) {
   const card = document.createElement('div');
 
   card.className = 'card';
-  card.style.width = '15rem';
+  card.style.width = '33%';
   if (readyInMinutes) {
-  card.innerHTML = `
+    card.innerHTML = `
     <img
       src="${image}"
       class="card-img-top"
@@ -31,7 +31,6 @@ function createCard({ title, image, readyInMinutes, id }) {
     </div>
   `;
   }
-
 
   main.appendChild(card);
 }
