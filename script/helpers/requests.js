@@ -30,8 +30,7 @@ const fetchSearchByIngredients = async () => {
   const response = await fetch(url);
   const data = await response.json();
   data.results.forEach((element) => {
-    const { title, image, id } = element;
-    createCard({ title, image, id });
+    createCard(element);
   });
 };
 
