@@ -1,7 +1,7 @@
 function createCard({ title, image, readyInMinutes, id }) {
   const card = document.createElement('div');
   card.className = 'card';
-  card.style.width = '18rem';
+  card.style.width = '15rem';
   card.innerHTML = `
     <img
       src="${image}"

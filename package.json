@@ -1,0 +1,23 @@
+{
+  "name": "whole-foods",
+  "version": "1.0.0",
+  "description": "[![Trybe - Whole Foods](https://img.shields.io/badge/Trybe-Whole_Foods-fcba03)](https://)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielpondaco/whole-foods.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielpondaco/whole-foods/issues"
+  },
+  "homepage": "https://github.com/gabrielpondaco/whole-foods#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
