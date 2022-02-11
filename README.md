@@ -4,12 +4,13 @@
 Um parágrafo da descrição do projeto vai aqui(iniciei embaixo, em construção)
 
 Projeto destinado ao usuário que possui um determinado ingrediente em sua casa ou geladeira e deseja realizar a preparação de um prato.
-Através de uma busca, onde se insere o ingrediente o site da algumas sugestões do preparo do alimento. A pessoa poderá filtar também por algum alimento pelo qual não come ou seja alérgico.    
+Através de uma busca, onde se insere o ingrediente o site da algumas sugestões para o preparo do alimento. A pessoa poderá filtar também por algum alimento pelo qual não come ou seja alérgico.    
 
 ## 🚀 Começando
 ```
 Exemplos:
 ```
+Se a pessoa possuir um alimento em sua casa -> a forma de inserção na busca: tomate cebola ovo -> o site irá retornar algumas opções de pratos para realizar com esses alimentos. 
 Uma pessoa vegana ou alergica a gluten, tem a possibilidade de fazer o filtro, selecionando esse filtro para que eles não apareça em nenhuma das receitas.   
 
 
