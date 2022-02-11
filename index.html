@@ -17,28 +17,114 @@
       <h1><strong>Whole Foods</strong></h1>
     </header>
 
-    <section class="w-25 m-auto">
-      <div class="input-group mb-3">
-        <input
-          type="text"
-          class="form-control"
-          id="input-text"
-          placeholder="Searching for something?"
-          aria-label="Searching for something?"
-          aria-describedby="button-addon2"
-        />
-        <button
-          class="btn btn-outline-secondary"
-          type="button"
-          id="button-addon2"
-        >
-          Search
-        </button>
-      </div>
+    <section class="d-flex">
+      <main
+        id="main"
+        class="w-50 m-auto d-flex justify-content-around flex-wrap"
+      ></main>
+
+      <aside class="w-25 p-5">
+        <form id="form" action="/" method="get">
+          <div class="mb-3">
+            <label for="includeIngredients" class="form-label"
+              >Include ingredients</label
+            >
+            <input
+              name="includeIngredients"
+              class="form-control"
+              id="includeIngredients"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="query" class="form-label">Query</label>
+            <input name="query" class="form-control" id="query" />
+          </div>
+          <div class="mb-3">
+            <label for="diet" class="form-label">Diet</label>
+            <select name="diet" class="form-select" id="diet">
+              <option selected>None</option>
+              <option value="vegan">Vegan</option>
+              <option value="vegetarian">Vegetarian</option>
+              <option value="gluten free">Gluten Free</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="intolerances" class="form-label">Intolerances</label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                name="intolerances"
+                type="checkbox"
+                value="gluten"
+                id="gluten"
+              />
+              <label class="form-check-label" for="gluten"> Gluten </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                name="intolerances"
+                type="checkbox"
+                value="dairy"
+                id="dairy"
+              />
+              <label class="form-check-label" for="dairy"> Dairy </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                name="intolerances"
+                type="checkbox"
+                value="peanut"
+                id="peanut"
+              />
+              <label class="form-check-label" for="peanut"> Peanut </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                name="intolerances"
+                type="checkbox"
+                value="soy"
+                id="soy"
+              />
+              <label class="form-check-label" for="soy"> Soy </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                name="intolerances"
+                type="checkbox"
+                value="egg"
+                id="egg"
+              />
+              <label class="form-check-label" for="egg"> Egg </label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="excludeIngredients" class="form-label"
+              >Exclude Ingredients</label
+            >
+            <input
+              name="excludeIngredients"
+              class="form-control"
+              id="excludeIngredients"
+            />
+          </div>
+          <button id="searchBtn" type="submit" class="btn btn-primary">
+            Search
+          </button>
+        </form>
+      </aside>
     </section>
 
-    <main id="main" class="w-50 m-auto d-flex justify-content-around flex-wrap"></main>
-    <script src="./script/createElements.js"></script>
-    <script src="./script/requests.js"></script>
+    <script src="./script/helpers/createElements.js"></script>
+    <script src="./script/helpers/requests.js"></script>
+    <script src="script/index.js"></script>
   </body>
 </html>

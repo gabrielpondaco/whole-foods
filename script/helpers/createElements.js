@@ -16,8 +16,6 @@ function createCard({ title, image, readyInMinutes, id }) {
       <a href="/recipe?id=${id}" id=${id} class="btn btn-primary" target="_blank">See details</a>
     </div>
   `;
+
   main.appendChild(card);
-  const link = document.getElementById(id);
-  link.addEventListener('click', fetchSearchById);
-  
 }
