@@ -13,12 +13,19 @@ const fetchRandomRecipes = async () => {
 
 const fetchSearchByIngredients = async () => {
   document.querySelector('main').innerHTML = '';
+  const querySearch = document.querySelector('#query').value;
+  const intolerancesArr = document.querySelectorAll('input[name=intolerances]:checked');
+  const intolerances = Array.from(intolerancesArr).map((int) => int.id).join(',');
+  const select = document.querySelector('select');
+  const diet = select[select.selectedIndex].value;
+  const excludeItems = document.querySelector('#excludeIngredients').value;
+  const exclude = excludeItems.split(' ').join(',');
   const value = input.value;
   const search = value.split(' ').join(',+');
-  const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${search}&number=2&${apiKey}`;
+  const url = `https://api.spoonacular.com/recipes/complexSearch?includeingredients=${search}&number=6&${apiKey}&addRecipeInformation=true&fillIngredients=true&intolerances=${intolerances}&diet=${diet}&excludeIngredients=${exclude}&query=${querySearch}`;
   const response = await fetch(url);
   const data = await response.json();
-  data.forEach((element) => {
+  data.results.forEach((element) => {
     const { title, image, id } = element;
     createCard({ title, image, id });
   });
