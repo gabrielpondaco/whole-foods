@@ -1,4 +1,4 @@
-const apiKey = 'apiKey=e21a60bee8724db4a1ac8c2f675c4ba0';
+const apiKey = 'apiKey=33d37cde403d41ffbe490274e307cb47';
 const input = document.querySelector('#includeIngredients');
 
 const fetchRandomRecipes = async () => {
