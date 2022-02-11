@@ -12,6 +12,7 @@ const fetchRandomRecipes = async () => {
 };
 
 const fetchSearchByIngredients = async () => {
+  document.querySelector('main').innerHTML = '';
   const value = input.value;
   const search = value.split(' ').join(',+');
   const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${search}&number=2&${apiKey}`;
