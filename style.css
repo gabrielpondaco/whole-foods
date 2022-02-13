@@ -4,3 +4,24 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+nav {
+  position: relative;
+}
+
+nav::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-image: url('https://www.foodnavigator.com/var/wrbm_gb_food_pharma/storage/images/_aliases/wrbm_large/publications/food-beverage-nutrition/foodnavigator.com/news/science/towards-a-new-generation-of-staple-foods-manufacturers-must-diversify-ingredients-for-better-farming-food/8802993-1-eng-GB/Towards-a-new-generation-of-staple-foods-Manufacturers-must-diversify-ingredients-for-better-farming-food.jpg');
+  opacity: 0.2;
+}
+
+nav h2, nav p {
+  position: relative;
+  text-shadow: 10px black;
+  font-weight: 900;
+}
