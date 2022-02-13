@@ -18,7 +18,7 @@ function createCard({ title, image, readyInMinutes, preparationMinutes, id }) {
         <p class="card-text">
           Ready in ${readyInMinutes || preparationMinutes} minutes
         </p>
-        <a href="/recipe?id=${id}" id=${id} class="btn btn-primary" target="_blank">See details</a>
+        <button class="btn btn-primary" target="_blank" onclick="seeDetails('${id}')">See details</a>
       </div>
     </div>
   `;
