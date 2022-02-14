@@ -12,9 +12,6 @@ const ENDPOINTS = {
 const TIME_IN_MILLISECONDS = 200;
 
 const fetchSimulator = (url) => {
-  if (typeof url === undefined || url.endsWith('undefined')) {
-    return Promise.reject(new Error('You must provide an url'));
-  }
   const validUrl = Object.values(ENDPOINTS).includes(url);
   return Promise.resolve({
     status: validUrl ? 200 : 404,
