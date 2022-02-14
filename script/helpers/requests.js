@@ -26,7 +26,7 @@ const fetchSearchByIngredients = async () => {
   const exclude = excludeItems.split(' ').join(',');
   const value = input.value;
   const search = value.split(' ').join(',');
-  const url = `https://api.spoonacular.com/recipes/complexSearch?includeIngredients=${search}&number=6&${apiKey}&addRecipeInformation=true&fillIngredients=true&intolerances=${intolerances}&diet=${diet}&excludeIngredients=${exclude}&query=${querySearch}`;
+  const url = `https://api.spoonacular.com/recipes/complexSearch?includeIngredients=${search}&number=13&${apiKey}&addRecipeInformation=true&fillIngredients=true&intolerances=${intolerances}&diet=${diet}&excludeIngredients=${exclude}&query=${querySearch}`;
   const response = await fetch(url);
   const data = await response.json();
   data.results.forEach((element) => {

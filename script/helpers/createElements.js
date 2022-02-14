@@ -18,10 +18,25 @@ function createCard({ title, image, readyInMinutes, preparationMinutes, id }) {
         <p class="card-text">
           Ready in ${readyInMinutes || preparationMinutes} minutes
         </p>
-        <a href="/recipe?id=${id}" id=${id} class="btn btn-primary" target="_blank">See details</a>
+        <button class="btn btn-primary" target="_blank" onclick="seeDetails('${id}')">See details</a>
       </div>
     </div>
   `;
 
   main.appendChild(card);
+}
+
+function createIngredientItem({original}){
+  const item = document.createElement('li');
+  item.innerText = original;
+  return item;
+}
+
+function createDetailItem(title, info, appendTo){
+  const div = document.createElement('div');
+  div.innerHTML = `
+    <strong>${title} </strong>
+    <span>${info}<span/>
+  `
+  appendTo.appendChild(div);
 }
