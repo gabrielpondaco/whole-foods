@@ -1,4 +1,4 @@
-var modal = new bootstrap.Modal(document.getElementById('seeDetailsModal'))
+let modal = new bootstrap.Modal(document.getElementById('seeDetailsModal'))
 
 async function seeDetails(id){
   modal.toggle()
