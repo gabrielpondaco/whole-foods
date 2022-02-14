@@ -1,36 +1,27 @@
 # Whole Foods
 [![Trybe - Whole Foods](https://img.shields.io/badge/Trybe-Whole_Foods-fcba03)](https://)
 
-Um parágrafo da descrição do projeto vai aqui(iniciei embaixo, em construção)
+Este é o repositório do *Whole Foods*, uma aplicação que te ajuda a descobrir receitas com os ingredientes que o usuário tem em casa!
 
-Projeto destinado ao usuário que possui um determinado ingrediente em sua casa ou geladeira e deseja realizar a preparação de um prato.
-Através de uma busca, onde se insere o ingrediente o site da algumas sugestões para o preparo do alimento. A pessoa poderá filtar também por algum alimento pelo qual não come ou seja alérgico.    
+O usuário lista quais alimentos ele quer (ou não!) que a receita tenha, além de alguns outros filtros, como dietas e intolerâncias, e uma lista de receitas é retornada.
 
-## 🚀 Começando
-```
-Exemplos:
-```
-Se a pessoa possuir um alimento em sua casa -> a forma de inserção na busca: tomate cebola ovo -> o site irá retornar algumas opções de pratos para realizar com esses alimentos. 
-Uma pessoa vegana ou alergica a gluten, tem a possibilidade de fazer o filtro, selecionando esse filtro para que eles não apareça em nenhuma das receitas.   
-
-
-## ⚙️ Executando os testes
-
-Explicar como executar os testes automatizados para este sistema.
-
-## 📦 Desenvolvimento
-
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
+## 🚀 A aplicação
+Assim que o usuário entra na página, uma lista de receitas aleatória é mostrada para o usuário, junto com uma lista de filtros:
+- Ingredientes que devem estar na receita
+- Ingredientes que não devem estar na receita
+- Pesquisa por texto, caso tenha um nome específico
+- Dieta
+- Intolerâncias
+Ao clicar numa receita, o usuário vê os ingredientes da receita, e se interessar, ele pode ir até a página da receita original para mais detalhes.
 
 ## 🛠️ Construído com
-
-Utilizamos as ferramentas: 
- API - https://spoonacular.com/food-api/docs#Get-Random-Recipes
- HTML/JAVASCRIPT/JEST
+- HTML
+- Javascript
+- [Spoonacular](https://spoonacular.com/food-api)
+- [Bootswatch](https://bootswatch.com/)
 
 ## ✒️ Autores
-
-[Marcos Vinícius] - (https://github.com/marvigdev)
-[Gabriel Pondaco] - (https://github.com/gabrielpondaco)
-[Kaique Coelho] -   (https://github.com/KaiqueCoelho)
-[Regislaine Regis] - (https://github.com/RegislaineRegis)
+- [Marcos Vinícius](https://github.com/marvigdev)
+- [Gabriel Pondaco](https://github.com/gabrielpondaco)
+- [Kaique Coelho](https://github.com/KaiqueCoelho)
+- [Regislaine Regis](https://github.com/RegislaineRegis)
