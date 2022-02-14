@@ -1,4 +1,4 @@
-const apiKey = 'apiKey=b46b8b5b592e44d4a9145e4e94b9ec58';
+const apiKey = 'apiKey=eba159da66b949238f0ade30045e157f';
 
 
 const fetchRandomRecipes = async () => {
@@ -16,8 +16,18 @@ const fetchSearchByIngredients = async (search, intolerances, diet, exclude, que
 };
 
 const fetchSearchById = async (id) => {
-  const url = `https://api.spoonacular.com/recipes/${id}/information?includeNutrition=false&${apiKey}`;
-  const response = await fetch(url);
-  const data = await response.json();
-  return data;
+  try {    
+    const url = `https://api.spoonacular.com/recipes/${id}/information?includeNutrition=false&${apiKey}`;
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    return err;
+  }
 };
+
+module.exports = {
+  fetchRandomRecipes,
+  fetchSearchById,
+  fetchSearchByIngredients
+}
