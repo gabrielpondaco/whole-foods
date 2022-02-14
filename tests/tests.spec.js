@@ -7,7 +7,7 @@ const random = require('../mocks/random');
 const byId = require('../mocks/byId');
 const byIngredients = require('../mocks/byIngredients')
 require('../mocks/mock');
-const apiKey = 'apiKey=eba159da66b949238f0ade30045e157f';
+const apiKey = 'apiKey=6ef3298ed7ec43f5878cf082d35cf33f';
 
 describe('Tests fetchRandomRecipes', () => {
   it('expects fetchRandomRecipes to be a function', () => {

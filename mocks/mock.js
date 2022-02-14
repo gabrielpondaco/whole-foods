@@ -1,7 +1,7 @@
 const byId = require('./byId');
 const byIngredients = require('./byIngredients');
 const random = require('./random');
-const apiKey = 'apiKey=eba159da66b949238f0ade30045e157f'
+const apiKey = 'apiKey=6ef3298ed7ec43f5878cf082d35cf33f'
 
 const ENDPOINTS = {
   RANDOM: `https://api.spoonacular.com/recipes/random?number=9&${apiKey}`,
