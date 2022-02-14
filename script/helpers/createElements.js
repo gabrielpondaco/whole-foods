@@ -25,3 +25,18 @@ function createCard({ title, image, readyInMinutes, preparationMinutes, id }) {
 
   main.appendChild(card);
 }
+
+function createIngredientItem({original}){
+  const item = document.createElement('li');
+  item.innerText = original;
+  return item;
+}
+
+function createDetailItem(title, info, appendTo){
+  const div = document.createElement('div');
+  div.innerHTML = `
+    <strong>${title} </strong>
+    <span>${info}<span/>
+  `
+  appendTo.appendChild(div);
+}
